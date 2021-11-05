@@ -20,8 +20,9 @@ const firebaseConfig = {
 
 const fbapp = initializeApp(firebaseConfig)
 
+// Ignore unused variable on next line.
 // @ts-ignore
-const appCheck = initializeAppCheck(fbapp, {
+initializeAppCheck(fbapp, {
   provider: new ReCaptchaV3Provider("6LdSmRUdAAAAAGQrxCOiEsmZVe65znEmKEwLOOES"),
   isTokenAutoRefreshEnabled: true
 })
