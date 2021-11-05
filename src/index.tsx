@@ -20,6 +20,7 @@ const firebaseConfig = {
 
 const fbapp = initializeApp(firebaseConfig)
 
+// @ts-ignore
 const appCheck = initializeAppCheck(fbapp, {
   provider: new ReCaptchaV3Provider("6LdSmRUdAAAAAGQrxCOiEsmZVe65znEmKEwLOOES"),
   isTokenAutoRefreshEnabled: true
